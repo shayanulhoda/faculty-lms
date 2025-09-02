@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Courses from "./pages/Courses";
 import LiveClasses from "./pages/LiveClasses";
 import Tests from "./pages/Tests";
+import Calendar from "./pages/Calendar";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -19,9 +20,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/live-classes" element={<LiveClasses />} />
-          <Route path="/tests" element={<Tests />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/live-classes" element={<LiveClasses />} />
+        <Route path="/tests" element={<Tests />} />
+        <Route path="/calendar" element={<Calendar />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -3,6 +3,7 @@ import {
   BookOpen, 
   Video, 
   ClipboardList, 
+  Calendar,
   BarChart3, 
   Users, 
   Bell, 
@@ -16,8 +17,9 @@ const navigationItems = [
   { name: "Courses", href: "/courses", icon: BookOpen },
   { name: "Live Classes", href: "/live-classes", icon: Video },
   { name: "Tests", href: "/tests", icon: ClipboardList },
-  { name: "Student Analytics", href: "/analytics", icon: BarChart3 },
+  { name: "Calendar", href: "/calendar", icon: Calendar },
   { name: "Communities", href: "/communities", icon: Users },
+  { name: "Student Analytics", href: "/analytics", icon: BarChart3 },
   { name: "Notifications", href: "/notifications", icon: Bell },
   { name: "Profile", href: "/profile", icon: User },
 ];
@@ -27,8 +29,8 @@ export function LMSSidebar() {
     <div className="w-64 bg-sidebar border-r border-sidebar-border flex flex-col">
       {/* Logo/Brand */}
       <div className="p-6 border-b border-sidebar-border">
-        <h2 className="text-xl font-semibold text-sidebar-foreground">Faculty LMS</h2>
-        <p className="text-sm text-muted-foreground">Teacher Dashboard</p>
+        <h2 className="text-xl font-semibold text-sidebar-foreground">NEET Faculty LMS</h2>
+        <p className="text-sm text-muted-foreground">NEET Preparation Platform</p>
       </div>
 
       {/* Navigation */}

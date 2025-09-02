@@ -10,9 +10,9 @@ const Index = () => {
       <div className="space-y-6">
         {/* Page Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-foreground">Dashboard</h1>
+          <h1 className="text-3xl font-bold text-foreground">NEET Faculty Dashboard</h1>
           <p className="text-muted-foreground mt-1">
-            Welcome back, Prof. Johnson. Here's what's happening with your classes today.
+            Welcome back, Prof. Johnson. Here's your NEET preparation platform overview for today.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ const Index = () => {
 
         {/* Analytics Section */}
         <div className="mt-8">
-          <h2 className="text-xl font-semibold text-foreground mb-4">Student Performance Analytics</h2>
+          <h2 className="text-xl font-semibold text-foreground mb-4">NEET Student Performance Analytics</h2>
           <StudentAnalytics />
         </div>
       </div>
