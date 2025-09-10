@@ -11,7 +11,7 @@ const overviewData = [
     color: "text-blue-600",
   },
   {
-    title: "Active Courses",  
+    title: "Active Classes",  
     value: "12",
     change: "+3",
     changeType: "positive" as const,

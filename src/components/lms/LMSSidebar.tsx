@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 
 const navigationItems = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
-  { name: "Courses", href: "/courses", icon: BookOpen },
+  { name: "Classes", href: "/classes", icon: BookOpen },
   { name: "Live Classes", href: "/live-classes", icon: Video },
   { name: "Tests", href: "/tests", icon: ClipboardList },
   { name: "Calendar", href: "/calendar", icon: Calendar },
