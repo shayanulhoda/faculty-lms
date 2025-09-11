@@ -1,41 +1,36 @@
 import { LMSLayout } from "@/components/lms/LMSLayout";
-import { OverviewCards } from "@/components/lms/OverviewCards";
-import { QuickActions } from "@/components/lms/QuickActions";
-import { UpcomingClasses } from "@/components/lms/UpcomingClasses";
-import { StudentAnalytics } from "@/components/lms/StudentAnalytics";
+import { DashboardOverview } from "@/components/dashboard/DashboardOverview";
+import { DashboardStats } from "@/components/dashboard/DashboardStats";
+import { QuickActions } from "@/components/dashboard/QuickActions";
+import { RecentNotifications } from "@/components/dashboard/RecentNotifications";
 
 const Index = () => {
   return (
     <LMSLayout>
-      <div className="space-y-6">
-        {/* Page Header */}
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-foreground">NEET Faculty Dashboard</h1>
-          <p className="text-muted-foreground mt-1">
-            Welcome back, Prof. Johnson. Here's your NEET preparation platform overview for today.
+      <div className="space-y-8">
+        {/* Header */}
+        <div>
+          <h1 className="text-3xl font-bold text-foreground">Teacher Dashboard</h1>
+          <p className="text-muted-foreground mt-2">
+            Welcome back! Here's your teaching overview for today.
           </p>
         </div>
 
         {/* Overview Cards */}
-        <OverviewCards />
+        <DashboardOverview />
 
         {/* Main Content Grid */}
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
-          {/* Left Column - Quick Actions */}
-          <div className="xl:col-span-1">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+          {/* Left Column - Stats & Charts */}
+          <div className="xl:col-span-2 space-y-8">
+            <DashboardStats />
+          </div>
+
+          {/* Right Column - Quick Actions & Notifications */}
+          <div className="space-y-8">
             <QuickActions />
+            <RecentNotifications />
           </div>
-
-          {/* Right Column - Upcoming Classes */}
-          <div className="xl:col-span-2">
-            <UpcomingClasses />
-          </div>
-        </div>
-
-        {/* Analytics Section */}
-        <div className="mt-8">
-          <h2 className="text-xl font-semibold text-foreground mb-4">NEET Student Performance Analytics</h2>
-          <StudentAnalytics />
         </div>
       </div>
     </LMSLayout>

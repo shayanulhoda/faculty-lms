@@ -1,26 +1,30 @@
-import { 
-  LayoutDashboard, 
-  BookOpen, 
-  Video, 
-  ClipboardList, 
-  Calendar,
-  BarChart3, 
-  Users, 
-  Bell, 
-  User 
-} from "lucide-react";
 import { NavLink } from "react-router-dom";
+import {
+  LayoutDashboard,
+  BookOpen,
+  Video,
+  FileText,
+  Calendar,
+  Users,
+  MessageSquare,
+  Bell,
+  BarChart3,
+  User,
+  CheckSquare,
+  GraduationCap,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navigationItems = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
-  { name: "Classes", href: "/classes", icon: BookOpen },
-  { name: "Live Classes", href: "/live-classes", icon: Video },
-  { name: "Tests", href: "/tests", icon: ClipboardList },
   { name: "Calendar", href: "/calendar", icon: Calendar },
-  { name: "Communities", href: "/communities", icon: Users },
-  { name: "Student Analytics", href: "/analytics", icon: BarChart3 },
+  { name: "Classes", href: "/classes", icon: Video },
+  { name: "Courses", href: "/courses", icon: BookOpen },
+  { name: "Tests", href: "/tests", icon: FileText },
+  { name: "Communities", href: "/communities", icon: MessageSquare },
+  { name: "Analytics", href: "/analytics", icon: BarChart3 },
   { name: "Notifications", href: "/notifications", icon: Bell },
+  { name: "Approvals", href: "/approvals", icon: CheckSquare },
   { name: "Profile", href: "/profile", icon: User },
 ];
 
@@ -29,8 +33,8 @@ export function LMSSidebar() {
     <div className="w-64 bg-sidebar border-r border-sidebar-border flex flex-col">
       {/* Logo/Brand */}
       <div className="p-6 border-b border-sidebar-border">
-        <h2 className="text-xl font-semibold text-sidebar-foreground">NEET Faculty LMS</h2>
-        <p className="text-sm text-muted-foreground">NEET Preparation Platform</p>
+        <h2 className="text-xl font-semibold text-sidebar-foreground">Teacher LMS</h2>
+        <p className="text-sm text-muted-foreground">Faculty Portal</p>
       </div>
 
       {/* Navigation */}
